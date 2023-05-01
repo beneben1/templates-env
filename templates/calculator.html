@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <form action="{{ url_for('calc') }}" method="post">
+        <label for="number1">Number 1:</label>
+        <input type="number" name="number1" id="number1"><br>
+        <label for="number2">Number 2:</label>
+        <input type="number" name="number2" id="number2"><br>
+        <label for="operation">Operation:</label>
+        <select name="operation" id="operation">
+            <option value="+">Addition (+)</option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (*)</option>
+            <option value="/">Division (/)</option>
+        </select><br>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+
+</html>
